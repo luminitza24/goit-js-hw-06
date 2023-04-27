@@ -10,3 +10,6 @@
 
 const totalList = liItems.length;
 console.log(`Number of categories:${totalList}`);
+
+const items = document.getElementById("item");
+console.log(items);

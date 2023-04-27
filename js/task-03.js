@@ -13,10 +13,14 @@ const images = [
   },
 ];
 
-const listaImagini = document.getElementById('gallery');
-for (const element in images){
-  const element = document.createElement('li');
-  element.appendChild(document.createTextNode(name))
- document.listaImagini.appendChild(element);
-listaImagini.insertAdjacentHTML("<img src=images.url alt=images.alt");
+for (let i = 0; i < images.length; i++){
+  const newImage = document.createElement('img')
+  newImage.classList.add( 'image-item')
+  newImage.setAttribute('alt', images[i].alt)
+  newImage.src = images[i].url;
+  const liItem = document.createElement('li')
+  liItem.appendChild(newImage);
+
+  document.getElementById(".gallery").appendChild(liItem)
+  console.log(liItem)
 }
