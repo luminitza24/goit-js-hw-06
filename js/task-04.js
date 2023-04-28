@@ -1,9 +1,12 @@
-const element = document.querySelectorAll("button");
-document.addEventListener("click", addUp);
+const elementIncrease = document.querySelector('button[data-action="increment"]');
+elementIncrease.addEventListener("click", addUp);
 function addUp() {
-    if(element.dataset.action === "increment")
-   {const x = document.getElementById("value");
-    document.getElementById("value").innerHTML = x.innerHTML +1;
-} 
-else{ document.getElementById("value").innerHTML = x.innerHTML -1}
+   const x = document.getElementById("value");
+    document.getElementById("value").innerHTML = parseInt(x.innerHTML) +1;
 };
+const elementDecrease =  document.querySelector('button[data-action="decrement"]');
+elementDecrease.addEventListener("click", scaleDown);
+function scaleDown(){
+    const y = document.getElementById("value");
+    document.getElementById("value").innerHTML = parseInt(y.innerHTML) -1;
+}

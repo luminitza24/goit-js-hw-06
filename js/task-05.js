@@ -1,8 +1,10 @@
-const input = document.querySelector("input");
-const output = document.querySelector("span");
-function LogheazaInput(){
-    if ( input !== "") {
-output.innerHTML = input.innerHTML;   
+const input = document.getElementById('name-input');
+const output = document.getElementById('name-output');
+function myEvent(){
+    if ( input.textContent !== "") {
+ input.textContent = output.textContent;   
     }
-    else{ output.innerHTML= "Anonymous"}
+    else{ output.textContent = "Anonymous"}
 };
+
+input.addEventListener('input',  myEvent());

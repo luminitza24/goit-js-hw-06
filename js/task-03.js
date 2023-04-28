@@ -20,7 +20,6 @@ for (let i = 0; i < images.length; i++){
   newImage.src = images[i].url;
   const liItem = document.createElement('li')
   liItem.appendChild(newImage);
+  document.querySelector('.gallery').appendChild(liItem)
 
-  document.getElementById(".gallery").appendChild(liItem)
-  console.log(liItem)
 }
