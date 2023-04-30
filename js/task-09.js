@@ -7,7 +7,6 @@ function getRandomHexColor() {
 
 const button = document.querySelector('.change-color');
 button.addEventListener('click', changeColor);
-const sectiune = document.getElementById
 function changeColor() {
 const color = console.log(getRandomHexColor())
  document.body.style.backgroundColor = color;

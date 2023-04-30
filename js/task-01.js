@@ -7,6 +7,7 @@
           liItems.push(categorii.childNodes[i]);
       }
   }
+  
 const totalList = liItems.length;
 console.log(`Number of categories:${totalList}`);
 const listItems = document.querySelector(".items")
