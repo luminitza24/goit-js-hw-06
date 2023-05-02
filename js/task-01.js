@@ -7,17 +7,17 @@
           liItems.push(categorii.childNodes[i]);
       }
   }
-  
-const totalList = liItems.length;
-console.log(`Number of categories:${totalList}`);
-const listItems = document.querySelector(".items")
-const elements = listItems.querySelectorAll("ul")
+
+  console.log(`Number of categories:${liItems.length}`)
+
+const listItems = document.querySelectorAll('.items')
+const elements = document.querySelectorAll('H2')
 const category =[]
 function numaraE(){
-  for (let i = 0 ; i < elements.childNodes.length; i++){
-    if (elements.childNodes[i].nodeName == "LI") {
-        category.push(elements.childNodes[i])
-        }
+  for (let i = 0 ; i < listItems.childNodes.length; i++){
+    if (listItems.childNodes[i].nodeName == "H2") {
+       category.push(elements)       }
     }
 }
   console.log(category)
+

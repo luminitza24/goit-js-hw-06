@@ -4,7 +4,7 @@ const saveInput = document.querySelector('input[ data-length="6"]')
   function addColor (event){
     event.preventDefault();
     const number = parseInt(saveInput.dataset.length)
-if (Inputtext.innerHTML.length >= number){
+if (Inputtext.textContent.length >= number){
  
   Inputtext.style.borderColor="#4caf50"
         
